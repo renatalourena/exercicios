@@ -5,6 +5,15 @@ public class ClassificaoPessoa {
         // se entre 18 e 59 é adulto
         // se maior ou igual que 60 é idoso
 
-        return "";
+        if(idade <= 12){
+            return "crianca";
+        } else if (idade>=13 && idade <= 17){
+            return "adolescente";
+        } else if (idade >= 18 && idade <= 59){
+            return "adulto";
+        } else {
+            return "idoso";
+        }
+
     }
 }

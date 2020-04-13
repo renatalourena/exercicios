@@ -1,8 +1,13 @@
 public class MaiorNumeroDaLista {
     public Integer maiorNumero(int[] lista){
         //procurar o maior numero numero da lista
-
-        return 0;
+        int maior = 0;
+        for(int i = 0; i< lista.length; i++){
+            if(lista[i] > maior){
+                maior = lista[i];
+            }
+        }
+        return maior;
 
     }
 }
